@@ -26,8 +26,12 @@
   <div align="center"></div>
 
 ![teaser](media/demo1.jpg)
-![teaser](media/demo2.jpg)
 ![teaser](media/overview.jpg)
+
+Tracking & Mapping | Map State Update |
+:-: | :-: |
+<video src='https://github.com/user-attachments/assets/8312aaf8-b530-464a-8b74-cc7c387eef22.mp4'> | <video src='https://github.com/user-attachments/assets/ace5c91d-bb4f-497f-b6e6-bb6daa6851e5.mp4'> |
+
 
 <!-- TABLE OF CONTENTS -->
 
