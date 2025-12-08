@@ -1,0 +1,90 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C/C++/CUDA build artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.ptx
+*.cubin
+*.cu.d
+*.mod.cu
+
+# Python packaging
+pip-wheel-metadata/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Logs and debug artifacts
+logs/
+*.log
+*.out
+*.err
+wandb/
+runs/
+lightning_logs/
+
+# Testing and type check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editors/IDE settings
+.vscode/
+.idea/
+.history/
+
+# Data and temporary artifacts (keep source/config tracked)
+outputs/
+output/
+results/
+result/
+.data/
+data/
+datasets/
+tmp/
+temp/
+.cache/
+
+# Model and weight files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Project-specific
+checkpoints/
+movies/
+thirdparty/
+eval_results/
+DPRetrieval/
+DBoW2/
+ORB*
+
+# CMake and compile database
+compile_commands.json
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/

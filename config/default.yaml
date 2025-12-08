@@ -1,0 +1,32 @@
+### DPVO Config File ###
+
+# VO config (increase for better accuracy)
+PATCHES_PER_FRAME: 128
+REMOVAL_WINDOW: 22
+OPTIMIZATION_WINDOW: 10
+PATCH_LIFETIME: 15
+
+# threshold for keyframe removal
+KEYFRAME_THRESH: 15.0
+
+# camera motion model
+MOTION_MODEL: 'DAMPED_LINEAR'
+MOTION_DAMPING: 0.5
+
+MIXED_PRECISION: True
+
+CENTROID_SEL_STRAT: 'GRADIENT_BIAS' # 'RANDOM' or 'GRADIENT_BIAS'
+
+COV_STEEPNESS: 10.0  # steepness parameter for sigmoid
+
+COV_THRESHOLD: 1.5   # threshold parameter for sigmoid
+
+VAR_THRESHOLD: 0.5   # threshold for filtering patches with high variance
+
+USE_COV_ADAPTIVE: True  # whether to use covariance adaptive weight
+
+USE_DEPTH_PRIOR: True  # whether to use depth prior from PI3 (if False, confidences will be set to 0)
+
+STATIC_MASK_THRESH: 0.4  # threshold for static region detection (static_mask < STATIC_MASK_THRESH)
+
+PI3_FRAME_RANGE: 5  # number of frames to use for PI3 inference
