@@ -118,7 +118,7 @@ If you have any questions, feel free to contact:
 - Liren Jin [ljin@uni-bonn.de](mailto:ljin@uni-bonn.de)
 
 ## Citation
-If you use 2DGS-SLAM for your academic work, please cite:
+If you use <em>&pi;³</em><sub>mos</sub>-slam for your academic work, please cite:
 ```
 @article{zhong2025arxiv,
   title   = {{Dynamic Visual SLAM using a General 3D Prior}},
