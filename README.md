@@ -65,9 +65,9 @@ Download the weights of the [DPVO](https://github.com/princeton-vl/DPVO) network
 mkdir checkpoints
 bash scripts/download_model.sh
 ```
-If `download_model.sh` doesn't work, you can also download `dpvo.pth` [here](https://drive.google.com/file/d/1lyDijcDAsqMXBYgQkPnZ_1tKJfYfSXnU/view?usp=drive_link) and then copy it into the checkpoints folder manually.
+If `download_model.sh` doesn't work, you can also download `dpvo.pth` [here](https://drive.google.com/file/d/1lyDijcDAsqMXBYgQkPnZ_1tKJfYfSXnU/view?usp=drive_link) and then copy it into the `checkpoints` folder manually.
 
-Finally, download the weights of the <em>&pi;³</em><sub>mos</sub> model [here](https://drive.google.com/file/d/145bC76pMHikhdTGkqDK0t9Ta0R7tw51v/view?usp=drive_link) and copy it into the checkpoints folder.
+Finally, download the weights of the <em>&pi;³</em><sub>mos</sub> model [here](https://drive.google.com/file/d/145bC76pMHikhdTGkqDK0t9Ta0R7tw51v/view?usp=drive_link) and copy it into the `checkpoints` folder.
 
 ## Run
 Download a demo sequence from the [Wild-SLAM Mocap Dataset](https://github.com/GradientSpaces/WildGS-SLAM)
