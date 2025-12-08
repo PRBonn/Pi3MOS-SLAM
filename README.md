@@ -32,14 +32,14 @@ Bonn | WildGS
 <video src='https://github.com/user-attachments/assets/8312aaf8-b530-464a-8b74-cc7c387eef22.mp4'> | <video src='https://github.com/user-attachments/assets/ace5c91d-bb4f-497f-b6e6-bb6daa6851e5.mp4'> |
 
 ## TODO List
-   - [x] Release the slam code and weights of <em>&pi;³</em><sub>mos</sub>.
+   - [x] Release the SLAM code and weights of <em>&pi;³</em><sub>mos</sub>.
    - [x] Evaluation scripts for camera tracking.
    - [ ] Evaluation scripts for moving object segmentation.
    - [ ] Evaluation scripts for video depth prediction.
    - [ ] Training code of <em>&pi;³</em><sub>mos</sub>.
 
 ## Installation
-We tested the code on Ubuntu 22.04 with Cuda 12.1.
+We tested the code on Ubuntu 22.04 with CUDA 12.1. You may need to adjust the PyTorch version in `environment.yml` according to your CUDA version. Refer to the [PyTorch documentation](https://pytorch.org/get-started/previous-versions/) for compatible versions.
 
 Clone the repo
 ```
@@ -52,23 +52,24 @@ conda env create -f environment.yml
 conda activate pi3mos
 ```
 
-Download Eigen and install <em>&pi;³</em><sub>mos</sub>-slam
+Download Eigen and install <em>&pi;³</em><sub>mos</sub>-SLAM
 ```bash
 wget https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.zip
 unzip eigen-3.4.0.zip -d thirdparty
 
-# install
+# install... It may take a while.
 pip install . --no-build-isolation
 ```
-Download the weights of DPVO network
+Download the weights of the [DPVO](https://github.com/princeton-vl/DPVO) network
 ```
 mkdir checkpoints
 bash scripts/download_model.sh
 ```
-Download the weights of <em>&pi;³</em><sub>mos</sub> model [here](https://drive.google.com/file/d/145bC76pMHikhdTGkqDK0t9Ta0R7tw51v/view?usp=drive_link) and copy it into the checkpoints folder.
+If `download_model.sh` doesn't work, you can also download `dpvo.pth` [here](https://drive.google.com/file/d/1lyDijcDAsqMXBYgQkPnZ_1tKJfYfSXnU/view?usp=drive_link) and then copy it into the checkpoints folder manually.
+Finally, download the weights of the <em>&pi;³</em><sub>mos</sub> model [here](https://drive.google.com/file/d/145bC76pMHikhdTGkqDK0t9Ta0R7tw51v/view?usp=drive_link) and copy it into the checkpoints folder.
 
 ## Run
-Download one demo sequence of [Wild-SLAM Mocap Dataset](https://github.com/GradientSpaces/WildGS-SLAM)
+Download a demo sequence from the [Wild-SLAM Mocap Dataset](https://github.com/GradientSpaces/WildGS-SLAM)
 ```
 bash scripts/download_wild_slam_mocap_umbrella.sh
 ```
@@ -105,11 +106,11 @@ Download the data [here](https://drive.google.com/file/d/1bSGX7JY73M3HzMS6xsJizR
 python evaluation/evaluate_sintel.py --dataset_root /path/to/Sintel
 ```
 
-We test our code on one Nvidia RTX A6000. Different environments and hardware may lead to slightly different results. We welcome testing and discussions :handshake:.
+We test our code on one NVIDIA RTX A6000. Different environments and hardware may lead to slightly different results. We welcome testing and discussions :handshake:.
 
 
 ## Acknowledgements
-We built our system upon [<em>&pi;³</em>](https://github.com/yyfz/Pi3) and [DPVO](https://github.com/princeton-vl/DPVO). We thank the authors for open-sourcing such great projects. 
+We built our system upon [<em>&pi;³</em>](https://github.com/yyfz/Pi3) and [DPVO](https://github.com/princeton-vl/DPVO). Our GUI is modified from [MonoGS](https://github.com/muskie82/MonoGS). We thank the authors for open-sourcing such great projects. 
 
 ## Contact
 If you have any questions, feel free to contact:
@@ -118,7 +119,7 @@ If you have any questions, feel free to contact:
 - Liren Jin [ljin@uni-bonn.de](mailto:ljin@uni-bonn.de)
 
 ## Citation
-If you use <em>&pi;³</em><sub>mos</sub>-slam for your academic work, please cite:
+If you use <em>&pi;³</em><sub>mos</sub>-SLAM for your academic work, please cite:
 ```
 @article{zhong2025arxiv,
   title   = {{Dynamic Visual SLAM using a General 3D Prior}},
