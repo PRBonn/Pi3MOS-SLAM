@@ -5,7 +5,7 @@
   <p align="center">
     <a href="https://github.com/PRBonn/Pi3MOS-SLAM"><img src="https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" /></a>
     <a href="https://github.com/PRBonn/Pi3MOS-SLAM"><img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" /></a>
-    <img src="https://img.shields.io/badge/Paper-pdf-<COLOR>.svg?style=flat-square" />
+    <a href="https://arxiv.org/abs/2512.06868"><img src="https://img.shields.io/badge/Paper-pdf-<COLOR>.svg?style=flat-square" /></a>
     <a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" /></a>
   </p>
 
@@ -21,7 +21,7 @@
     ·
     <a href="https://www.ipb.uni-bonn.de/people/cyrill-stachniss/"><strong>Cyrill Stachniss</strong></a>
   </p>
-  <h3 align="center"><a href="#">Paper</a> | <a href="#">Video</a></h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2512.06868">Paper</a> | <a href="#">Video</a></h3>
   <div align="center"></div>
 
 ![teaser](media/overview.jpg)
@@ -126,7 +126,7 @@ If you use <em>&pi;³</em><sub>mos</sub>-SLAM for your academic work, please cit
   title   = {{Dynamic Visual SLAM using a General 3D Prior}},
   author  = {Zhong, Xingguang and Jin, Liren and Popovi{\'c}, Marija and Behley, Jens and Stachniss, Cyrill},
   journal = arxiv,
-  volume  = {arXiv:2506.00970},
+  volume  = {arXiv:2512.06868},
   year    = {2025}
 }
 ```
