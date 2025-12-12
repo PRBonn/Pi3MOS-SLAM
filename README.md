@@ -21,7 +21,7 @@
     ·
     <a href="https://www.ipb.uni-bonn.de/people/cyrill-stachniss/"><strong>Cyrill Stachniss</strong></a>
   </p>
-  <h3 align="center"><a href="https://arxiv.org/abs/2512.06868">Paper</a> | <a href="#">Video</a></h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2512.06868">Paper</a> | <a href="#">Supplementary</a></h3>
   <div align="center"></div>
 
 ![teaser](media/overview.jpg)
