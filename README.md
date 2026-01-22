@@ -34,7 +34,7 @@ Bonn | WildGS
 ## TODO List
    - [x] Release the SLAM code and weights of <em>&pi;³</em><sub>mos</sub>.
    - [x] Evaluation scripts for camera tracking.
-   - [ ] Evaluation scripts for moving object segmentation.
+   - [x] Evaluation scripts for moving object segmentation.
    - [ ] Evaluation scripts for video depth prediction.
    - [ ] Training code of <em>&pi;³</em><sub>mos</sub>.
 
@@ -107,7 +107,14 @@ Download the data [here](https://drive.google.com/file/d/1bSGX7JY73M3HzMS6xsJizR
 python evaluation/evaluate_sintel.py --dataset_root /path/to/Sintel
 ```
 
-We test our code on one NVIDIA RTX A6000. Different environments and hardware may lead to slightly different results. We welcome testing and discussions :handshake:.
+### DAVIS Dataset
+
+Download the data [here](https://davischallenge.org/index.html) and unzip it to your desired location. We test on both DAVIS2016 and DAVIS2017 setset.
+We use the same sequence as reported in baseline approaches, so you need specify the sequnce for evaluation by selecting secen_list from davis_2016 or davis_2017.
+
+```
+python evaluation/evaluate_davis.py --dataset_root /path/to/DAVIS --scene_list davis_2016
+```
 
 
 ## Acknowledgements

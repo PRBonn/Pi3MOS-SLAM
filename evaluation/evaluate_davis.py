@@ -9,8 +9,6 @@ import glob
 import math
 from PIL import Image
 import numpy as np
-import pdb
-import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import csv
 
@@ -122,7 +120,6 @@ davis_2017 = [
     "shooting",
     "soapbox",
 ]
-
 
 
 class DavisData:
@@ -447,7 +444,7 @@ scene_lists = {
 
 @click.command()
 @click.option("--ckpt", required=True)
-@click.option("--data_dir", required=True)
+@click.option("--dataset_root", required=True)
 @click.option("--scene_list", required=True)
 @click.option("--threshold", default=0.25)
 @click.option("--output", default="output")
