@@ -81,8 +81,9 @@ python demo.py --imagedir datasets/Wild_SLAM_Mocap/scene1/umbrella/rgb --calib c
 We downsample the point cloud to reduce the computational burden of visualization. If you run the demo without `--calib`, the code will automatically estimate the intrinsic parameters from <em>&pi;³</em><sub>mos</sub>'s depth prediction.
 
 ## Evaluation
+### 1. Camera Tracking
 For camera tracking performance, we evaluate our method on three datasets: Wild-SLAM Mocap Dataset, Bonn RGB-D Dataset, and Sintel Dataset. 
-### Wild-SLAM Mocap Dataset
+#### Wild-SLAM Mocap Dataset
 
 Download all sequences from the [Wild-SLAM Mocap Dataset](https://github.com/GradientSpaces/WildGS-SLAM). You can use the download scripts from [WildGS-SLAM](https://github.com/GradientSpaces/WildGS-SLAM).
 ```
@@ -93,13 +94,13 @@ Then run the evaluation with: (change the dataset_root first)
 ```
 python evaluation/evaluate_wild.py --dataset_root /path/to/Wild_SLAM_Mocap
 ```
-### Bonn RGB-D Dataset
+#### Bonn RGB-D Dataset
 Download the data from our [website](https://www.ipb.uni-bonn.de/data/rgbd-dynamic-dataset/index.html) :wink:. To keep consistent with baselines, we only report results on 8 sequences, which you can find in `evaluation/evaluate_bonn.py`. Once the data preparation is done, change the path and run:
 ```
 python evaluation/evaluate_bonn.py --dataset_root /path/to/rgbd_bonn_dataset
 ```
 
-### Sintel Dataset
+#### Sintel Dataset
 
 Download the data [here](https://drive.google.com/file/d/1bSGX7JY73M3HzMS6xsJizRkPH-NQLPOf/view) (This link is from [MegaSam](https://mega-sam.github.io/)) and unzip it to your desired location, then change the path and run:
 
@@ -107,10 +108,11 @@ Download the data [here](https://drive.google.com/file/d/1bSGX7JY73M3HzMS6xsJizR
 python evaluation/evaluate_sintel.py --dataset_root /path/to/Sintel
 ```
 
-### DAVIS Dataset
+### 2. Moving object segmentation
+For moving object segmentation, we evaluate our method on DAVIS Dataset.
 
 Download the data [here](https://davischallenge.org/index.html) and unzip it to your desired location. We test on both DAVIS2016 and DAVIS2017 setset.
-We use the same sequence as reported in baseline approaches, so you need specify the sequnce for evaluation by selecting secen_list from davis_2016 or davis_2017.
+We use the same sequence as reported in [Easi3R](https://github.com/Inception3D/Easi3R), so you may need to specify the sequences for evaluation by selecting `secen_list` from `davis_2016` or `davis_2017`.
 
 ```
 python evaluation/evaluate_davis.py --dataset_root /path/to/DAVIS --scene_list davis_2016
