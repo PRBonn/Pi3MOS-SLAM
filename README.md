@@ -130,11 +130,10 @@ If you have any questions, feel free to contact:
 ## Citation
 If you use <em>&pi;³</em><sub>mos</sub>-SLAM for your academic work, please cite:
 ```
-@article{zhong2025arxiv,
-  title   = {{Dynamic Visual SLAM using a General 3D Prior}},
-  author  = {Zhong, Xingguang and Jin, Liren and Popovi{\'c}, Marija and Behley, Jens and Stachniss, Cyrill},
-  journal = arxiv,
-  volume  = {arXiv:2512.06868},
-  year    = {2025}
+@inproceedings{zhong2026cvpr,
+  title     = {{Dynamic Visual SLAM using a General 3D Prior}},
+  author    = {Zhong, Xingguang and Jin, Liren and Popovi{\'c}, Marija and Behley, Jens and Stachniss, Cyrill},
+  booktitle = {Proc. of the IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2026}
 }
 ```
