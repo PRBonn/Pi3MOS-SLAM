@@ -30,13 +30,6 @@ Bonn | WildGS
 :-: | :-: 
 <video src='https://github.com/user-attachments/assets/8312aaf8-b530-464a-8b74-cc7c387eef22.mp4'> | <video src='https://github.com/user-attachments/assets/ace5c91d-bb4f-497f-b6e6-bb6daa6851e5.mp4'> |
 
-## TODO List
-   - [x] Release the SLAM code and weights of <em>&pi;³</em><sub>mos</sub>.
-   - [x] Evaluation scripts for camera tracking.
-   - [x] Evaluation scripts for moving object segmentation.
-   - [ ] Evaluation scripts for video depth prediction.
-   - [ ] Training code of <em>&pi;³</em><sub>mos</sub>.
-
 ## Installation
 We tested the code on Ubuntu 22.04 with CUDA 12.1. You may need to adjust the PyTorch version in `environment.yml` according to your CUDA version. Refer to the [PyTorch documentation](https://pytorch.org/get-started/previous-versions/) for compatible versions.
 
@@ -124,8 +117,7 @@ We built our system upon [<em>&pi;³</em>](https://github.com/yyfz/Pi3) and [DPV
 ## Contact
 If you have any questions, feel free to contact:
 
-- Xingguang Zhong [zhong@igg.uni-bonn.de](mailto:zhong@igg.uni-bonn.de)
-- Liren Jin [ljin@uni-bonn.de](mailto:ljin@uni-bonn.de)
+- Xingguang Zhong [zhongstarry@gmail.com](mailto:zhongstarry@gmail.com)
 
 ## Citation
 If you use <em>&pi;³</em><sub>mos</sub>-SLAM for your academic work, please cite:
